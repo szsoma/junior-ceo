@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Junior CEO</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Parallax.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="section banner">
+        <div class="container">
+            <div id="falcon-heavy" data-scalar-y="100" data-friction-y="0.015" data-friction-x="0.005">
+                <div data-depth="0.05">
+                    <img src="img/fh.png" alt="falcon-heavy">
+                </div>
+                <div  data-depth="0.01">
+                    <img class="tower" src="img/banner/tower.png" alt="tower">
+                </div>
+            </div>
+            <div id="scene" data-scalar-y="5.0" data-friction-y="0.075" data-friction-x="0.015">
+                <div  data-depth="0.12">
+                    <img class="cloud-middle" src="img/banner/middle-cloud.png" alt="middle">
+                </div>
+                <div  data-depth="0.07">
+                    <img class="cloud-left" src="img/banner/left-cloud.png" alt="left">
+                </div>
+                <div  data-depth="0.06">
+                    <img class="cloud-right" src="img/banner/right-cloud.png" alt="right">
+                </div>
+                <div class="bg">
+                    <img src="img/banner/parallax-bg.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var fh = document.getElementById('falcon-heavy');
+        var parallaxInstance = new Parallax(scene);
+        var parallaxInstance = new Parallax(fh);
+    </script>
+  </body>
+</html>
