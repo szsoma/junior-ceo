@@ -1,0 +1,197 @@
+/* Raleway Google font */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,900');
+@font-face {
+    font-family: 'junior-ceo-iconfont';
+    src: url('./font/junior-ceo-iconfont.eot?78400969');
+    src: url('./font/junior-ceo-iconfont.eot?78400969#iefix') format('embedded-opentype'),
+         url('./font/junior-ceo-iconfont.woff?78400969') format('woff'),
+         url('./font/junior-ceo-iconfont.ttf?78400969') format('truetype'),
+         url('./font/junior-ceo-iconfont.svg?78400969#junior-ceo-iconfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html{
+    font-size: 6px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #fff;
+}
+
+/*  Banner */
+
+.banner-mobile {
+    width: 100%;
+    background: linear-gradient(to right,rgba(0, 0, 0, .4),rgba(0, 0, 0, .2)), url('../img/banner/bg-xs-sm-md.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-h1 {
+    font-size: 3.6rem;
+    line-height: 1.5;
+    padding: 4rem;
+}
+
+.banner-content {
+    margin: 6rem auto;
+}
+
+/* About-us-head */
+
+.about-us-head {
+    color: #1f1f1f;
+}
+
+.describe {
+    color: #999;
+    padding: 4rem;
+}
+
+/* List-ceo */
+
+.lists {
+    margin: 6rem auto;
+    padding: 4rem;
+}
+
+.job-h3 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.list-ceo {
+    list-style: none;
+}
+
+.list-ceo li {
+    margin: 3rem auto;
+}
+
+.list-ceo li:before {
+    position: absolute;
+    display: inline-block;
+    width: 2rem;
+    padding: 1.5rem;
+    left: 1rem;
+    margin-top: -1.5rem;
+}
+
+.list-done li:before{
+    content: '\e800';
+}
+
+/* Tasks */
+
+.tasks {
+    width: 100%;
+    background: url('../img/bg-1.jpg') no-repeat center;
+}
+
+/* innonic-gives */
+
+.innonic-gives {
+    width: 100%;
+    background-color: #11b5be;
+}
+
+/* expectations */
+
+.expectations {
+    width: 100%;
+    background: url('../img/bg-2.jpg') no-repeat center;
+    color: #333;
+}
+
+/* no-need */
+
+.no-need {
+    width: 100%;
+    background-color: #015979;
+}
+
+/* CTA */
+
+.cta {
+    width: 100%;
+    background: url('../img/bg-3.jpg') no-repeat center;
+    color: #333;
+}
+
+@media screen and ( min-width: 576px ){
+    html {
+        font-size: 7px;
+    }
+}
+
+@media screen and ( min-width: 768px ){
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and ( min-width: 992px ){
+    html {
+        font-size: 9px;
+    }
+
+}
+@media screen and ( min-width: 1200px ){
+
+    html {
+        font-size: 10px;
+    }
+
+    /* Banner-desktop */
+
+    .banner-text {
+        position: absolute;
+        z-index: 3;
+    }
+
+    .banner-h1 {
+        font-weight: 300;
+        width: 50%;
+        line-height: 1.5;
+    }
+        
+    .banner-wrapper {
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        background: url('../img/banner/parallax-bg.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    #falcon-heavy {
+        height: 700px;
+        position: absolute;
+        z-index: 1;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    #screen {
+        margin: 0 auto;
+    }
+
+    .cloud-left {
+        margin-top: 14%;
+        margin-left: -50%;
+    }
+
+    .cloud-middle {
+        margin-top: 14%;
+        margin-right: 50%;
+    }
+
+    .cloud-right {
+        margin-top: 5%;
+    }
+
+}
