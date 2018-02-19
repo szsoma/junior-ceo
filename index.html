@@ -14,6 +14,20 @@
     
     <link href="css/style.css" rel="stylesheet">
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+   
+    <!-- Base MasterSlider style sheet -->
+    <link rel="stylesheet" href="css/masterslider.css" />
+    
+    <!-- Master Slider Skin -->
+    <link href="css/style-skin.css" rel='stylesheet' type='text/css'>
+        
+    <!-- MasterSlider Template Style -->
+    <link href='css/ms-caro3d.css' rel='stylesheet' type='text/css'>
+    
+    <!-- Master Slider -->
+    <script src="js/masterslider.min.js"></script>
+
     <!-- Parallax.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     
@@ -42,8 +56,14 @@
                 <div class="banner-text">
                     <h1 class="banner-h1" >Junior szinten keresünk új <b>Startup CEO</b>-t, aki segít a következő nemzetközi sikertörténetünk megvalósításában.</h1>
                 </div>
+
+                <div class="arc-wrapper">
+                    <svg class="arc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 43.7">
+                        <path d="M1920,43.7C1737.3,17.7,1376,0,960,0S182.7,17.7,0,43.7Z" transform="translate(0)"/>
+                    </svg>                      
+                </div>
                 
-                <div id="falcon-heavy" data-scalar-y="100" data-friction-y="0.015" data-friction-x="0.005">
+                <div id="falcon-heavy" data-relative-input="true"  data-scalar-y="100" data-friction-y="0.005" data-friction-x="0.003">
                     <div data-depth="0.05">
                         <img src="img/banner/fh.png" alt="falcon-heavy">
                     </div>
@@ -72,6 +92,22 @@
     </div>
     </section>
 
+    <section class="startup-describe">
+        <div class="container">
+            <div class="row">
+                <div class="startup col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p class="startup-p">
+                        Érdekel a vállalkozások világa, de még nem vágtál bele?
+Szeretnél a jövőben saját nemzetközi céget vezetni? Gyere hozzánk Junior Startup CEO-nak (gyakorlatilag kezdő cégvezetőnek) és szerezd meg a hozzá szükséges ismereteket élőben azoktól, akik most is ezt csinálják!
+                    </p>
+                    <p class="startup-p">
+                        Egy startup vezetése rendkívül összetett dolog, és nem való mindenkinek. Széleskörű ismereteket igényel, gyakran sok különböző fókusz között kell egyensúlyozni, és nagy nyomás alatt is hatékonyan kell tudni teljesíteni. Hogy mennyire vagy alkalmas rá, azt kiderítheted úgy is, hogy csinálsz egy saját vállalkozást (de ez meglehetősen kockázatos és drága módja), vagy eljöhetsz hozzánk dolgozni - és ha mindketten úgy látjuk, hogy alkalmas vagy rá, akkor előbb-utóbb egy új startup projektünk vezetését is rád bízzuk!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="about-us-wrapper">
         <div class="container">
             <div class="row">
@@ -83,6 +119,35 @@
             <div class="row about-us">
                 <div class="logos col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
+                    		<!-- template -->
+                    <div class="ms-caro3d-template">
+                        <!-- masterslider -->
+                        <div class="master-slider ms-skin-light-3" id="masterslider">
+                            <div class="ms-slide">
+                                <img src="img/slider/blank.gif" data-src="img/slider/sr-horizontal.png" alt="lorem ipsum dolor sit"/>  
+                            </div>
+                            <div class="ms-slide">
+                                <img src="img/slider/blank.gif" data-src="img/slider/om-horizontal.png" alt="lorem ipsum dolor sit"/>     
+                            </div>
+                            <div class="ms-slide">
+                                <img src="img/slider/blank.gif" data-src="img/slider/inn-horizontal.png" alt="lorem ipsum dolor sit"/>    
+                            </div>
+                            <div class="ms-slide">
+                                <img src="img/slider/blank.gif" data-src="img/slider/cr-horizontal.png" alt="lorem ipsum dolor sit"/>       
+                            </div>
+                            <div class="ms-slide">
+                                <img src="img/slider/blank.gif" data-src="img/slider/cv-horizontal.png" alt="lorem ipsum dolor sit"/>  
+                            </div>
+                            <div class="ms-slide">
+                                <img src="img/slider/blank.gif" data-src="img/slider/expo-horizontal.png" alt="lorem ipsum dolor sit"/>        
+                            </div>
+                            <div class="ms-slide">
+                                <img src="img/slider/blank.gif" data-src="img/slider/ac-horizontal.png" alt="lorem ipsum dolor sit"/>  
+                            </div>
+                        </div>
+                        <!-- end of masterslider -->
+                </div>
+                <!-- end of template -->
                 </div>
                 <div class="describe col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <p class="describe-p">
@@ -105,11 +170,13 @@
                 <div class="lists col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <h3 class="job-h3">A Junior Startup CEO feladatai</h3>
                     <ul class="list-ceo list-done">
-                        <li class="icon-check-03">Ötletgyűjtés koordinálása: sokan dolgozunk azon, hogy világmegváltó ötleteink legyenek. Ezeknek a gyűjtésében aktív részt szánunk neked!</li>
-                        <li class="icon-check-03">Ötletek üzleti validációja: a számtalan ötlet közül meg kell szülessen az üzletileg is életképes. Validálni fogsz az időd legnagyobb részében.</li>
-                        <li class="icon-check-03">Interjúk, kutatások: potenciális ügyfelekkel kell beszélned, számos iparágba kell beleásnod magad. A háttérkutatások, összefoglalók készítése nem szabad, hogy megrémítsem, sem pedig ha idegenekkel kell leállnod beszélgetni az ötletedről. És mindezt angolul is folyékonyan tedd, mert ugye nemzetközi projekteket építünk.</li>
-                        <li class="icon-check-03">Projektmenedzsment: egyrészt bevonunk a már futó sikeres projektjeinkbe is, hogy közvetlenül tudj tanulni a tapasztaltabb kollégáktól. Így lesz lehetőséged kész rendszerekbe és megoldásokba belelátni. De azt várjuk tőled, hogy a saját projektedet te vezesd a mi támogatásunkkal. Tered lesz rá.</li>
-                        <li class="icon-check-03">Csapatépítés: folyamatosan csapatban dolgozol, de az időd nagyrészében egyedül felelsz a projektedért. Ha sikerül a validáció és befektetést kap a projekted, akkor viszont saját csapatot kell építened.</li>
+                        <li class="icon-check-03">Mindent, amivel egy Startup CEO is szembesül. Ami amúgy tényleg minden - egy Startup CEO dolga elég összetett.</li>
+                        <li class="icon-check-03">Nem csak "teszt" feladatokat kapsz, de a meglévő Startup projektjeinkben fogsz érdemi, valós feladatokat végezni.</li>
+                        <li class="icon-check-03">Plusz párhuzamosan segítesz nekünk új startup ötleteket validálni, ezzel is fejlesztve az üzleti, stratégiai képességeidet</li>
+                        <li class="icon-check-03">Kapsz projektmenedzseri feladatokat, marketinges feladatokat, értékesítési feladatokat. Ez függ tőled és a képességeidtől is, meg hogy épp mire van szükség házon belül. </li>
+                        <li class="icon-check-03">Igyekszünk minél változatosabb és szélesebb körű feladatokat rád bízni, és teszteljük, hogy mihez van érzéked. Ez neked is jó teszt lesz, hogy lásd miben vagy jó, és mihez van affinitásod.</li>
+                        <li class="icon-check-03">Nagyon sok belső képzésen fogsz részt venni - az Innonic Academy minden tudását magába kell szívnod. Ha már unod a tanulást, akkor nem ez lesz a neked való munkahely.</li>
+                        <li class="icon-check-03">Részt veszel sok olyan meetingen és projektben, amiben nem biztos, hogy értéket tudsz teremteni (még), de nagyon hasznosak lesznek a fejlődésed szempontjából, mert belelátsz majd a dolgokba.</li>
                     </ul>
                 </div>
             </div>
@@ -184,8 +251,6 @@
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
@@ -202,5 +267,27 @@
         var falconheavy = document.getElementById('falcon-heavy');
         var parallaxInstance = new Parallax(falconheavy);
     </script>
+
+<script type="text/javascript">		
+	
+    var slider = new MasterSlider();
+    
+    slider.control('arrows');
+
+    slider.setup('masterslider' , {
+        width:440,
+        height:160,
+        space: 0,
+        loop:true,
+        view:'flow',
+        autoplay: true,
+        keyboard: true,
+        view:"basic",
+        autoHeight: "true",
+        layout:'partialview'
+    });
+
+</script>
+
   </body>
 </html>
